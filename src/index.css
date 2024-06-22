@@ -1,13 +1,69 @@
-body {
+html, body {
+  overflow-x: hidden; /* Disables scrollbars */
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Arial', sans-serif; /* You can replace 'Arial' with any modern clean font */
+  background-image: url('../public/background.webp'); /* Update this path */
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+  z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.main {
+  color: white;
+  font-size: 5em; /* Adjust the size as needed */
+}
+
+.orbitron-400  {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-white  {
+  color: white;
+  font-family: 'Courier', sans-serif;
+}
+
+
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: white;
+  font-size: 1.5em; /* Adjust the size as needed */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Courier', sans-serif; /* You can replace 'Arial' with any modern clean font */
+}
+
+.navigation:hover {
+  cursor: pointer;
+  color: #777777; /* Change to the color you prefer on hover */
+}
+
+.card.custom-card {
+  background-color: #33333355;
+  color: white;
+  font-family: 'Courier', sans-serif; /* You can replace 'Arial' with any modern clean font */
+  border-radius: 20px;
 }
