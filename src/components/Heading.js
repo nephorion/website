@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {useNavigate} from "react-router-dom";
 
 const HeadingTitle = styled.h1`
     font-family: "Orbitron", sans-serif;
@@ -9,12 +10,22 @@ const HeadingTitle = styled.h1`
     color: white;
     font-size: 10vw;
     max-font-size: 40em;
+    transition: color 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        color: #AAAAAA;
+    }
 `;
 
-const Heading = ({name}) => (
-    <HeadingTitle>
-        {name}
-    </HeadingTitle>
-);
+
+const Heading = ({name}) => {
+    const navigate = useNavigate();
+
+    return (
+        <HeadingTitle onClick={()=> navigate("/")}>
+            {name}
+        </HeadingTitle>
+    )
+};
 
 export default Heading;

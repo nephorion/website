@@ -2,9 +2,9 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import HomePage from './components/HomePage';
-import AboutPage from "./components/AboutPage";
-import ContactPage from "./components/ContactPage";
+import HomePage from './pages/HomePage';
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
     return (
