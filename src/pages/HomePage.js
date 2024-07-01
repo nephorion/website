@@ -25,9 +25,7 @@ const HomePage = () => {
                         contact
                     </Link>
                 </Col>
-            </Row>
-
-        </Container>
+            </Row></Container>
     );
 }
 
