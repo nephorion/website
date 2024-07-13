@@ -8,6 +8,8 @@ html, body {
 body {
   background-color: black;
   margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
   display: flex;
   justify-content: center;
   font-family: 'Arial', sans-serif; /* You can replace 'Arial' with any modern clean font */
