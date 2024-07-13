@@ -13,7 +13,7 @@ const HeadingTitle = styled.h1`
     transition: color 0.3s ease;
     &:hover {
         cursor: pointer;
-        color: #AAAAAA;
+        color: #EEEEEE;
     }
 `;
 
