@@ -1,9 +1,8 @@
 import React from 'react';
-import Heading from '../components/Heading';
-import {Col, Container, Image, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
-import SubHeading from "../components/SubHeading";
+import PageHeader from "../components/PageHeader";
 
 const Paragraph = styled.p`
     color: white;
@@ -13,29 +12,8 @@ const Paragraph = styled.p`
 const HomePage = () => {
     return (
         <Container>
+            <PageHeader/>
             <Row>
-                <Col sm className="text-center">
-                    <Image
-                        src={`${process.env.PUBLIC_URL}/logo.png`}
-                        style={{ width: '50%' }}
-                        alt="logo image"
-                    />
-                </Col>
-            </Row>
-            <Row>
-                <Col sm className="text-center">
-                    <SubHeading name="Cloud Native. AI Augmented. Code Fluent. Human First."/>
-                </Col>
-            </Row>
-
-            <Row>
-                <Col sm className="text-center">
-                    <Heading name="nephorion"/>
-                </Col>
-            </Row>
-
-
-            <Row>d
                 <Col sm className="text-center">
                     <Paragraph>
                         In the neon-drenched corridors of the digital sprawl,
