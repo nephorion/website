@@ -8,9 +8,11 @@ const HomePage = () => {
         <Container>
             <PageHeader/>
             <Row>
+                <Col sm></Col>
                 <Col sm className="text-center">
                     <ContactForm />
                 </Col>
+                <Col sm></Col>
             </Row>
 
         </Container>
