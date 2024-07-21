@@ -1,3 +1,7 @@
+# Setup dev environment
+```
+source dev_setup.sh
+```
 
 
 
