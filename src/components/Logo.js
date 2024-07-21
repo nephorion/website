@@ -21,8 +21,8 @@ const Logo= () => {
                 onClick={()=> navigate("/")}
                 src={`${process.env.PUBLIC_URL}/logo.png`}
                 style={{
-                    width: '30%',
-                    marginBottom: '10%',
+                    width: '20%',
+                    marginBottom: '5%',
                 }}
                 alt="logo image"
             />

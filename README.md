@@ -3,8 +3,13 @@
 source dev_setup.sh
 ```
 
+```
+npm run build
+```
 
-
+```
+gcloud storage cp --recursive build/** gs://${PROJECT_ID}
+```
 
 
 
