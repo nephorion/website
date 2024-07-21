@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {Form, Button, Row, Col} from 'react-bootstrap';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { trackButtonClick } from '../utils/analytics';
 
 
 const ContactForm = () => {
@@ -16,6 +17,7 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            trackButtonClick('website', 'ContactForm', 'send');
             await axios.post('https://api.nephorion.com/website/contact', formData);
             navigate("/");
         } catch (error) {
@@ -24,6 +26,7 @@ const ContactForm = () => {
     };
 
     const handleCancel = async () => {
+        trackButtonClick('website', 'ContactForm', 'cancel');
         navigate("/");
     };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import {Col, Image, Row} from "react-bootstrap";
 import SubHeading from "./SubHeading";
 import Heading from "./Heading";
+import Logo from "./Logo";
 
 
 const PageHeader = ({name}) => {
@@ -9,11 +10,7 @@ const PageHeader = ({name}) => {
         <>
             <Row>
                 <Col sm className="text-center">
-                    <Image
-                        src={`${process.env.PUBLIC_URL}/logo.png`}
-                        style={{ width: '30%',marginBottom: '10%',marginTop: '5%' }}
-                        alt="logo image"
-                    />
+                    <Logo/>
                 </Col>
             </Row>
 
