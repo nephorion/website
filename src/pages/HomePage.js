@@ -1,6 +1,5 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import styled from "styled-components";
 import PageHeader from "../components/PageHeader";
 
@@ -23,9 +22,17 @@ const HomePage = () => {
                         with the human experience at it's core, bridging the divide
                         between cold silicon and warm flesh. This isn't just technology — it's
                         a revolution. Plug in, sync up, and let’s create the future.
-                        <Link to={"/contact"}>Hit us up</Link>, and let's craft the extraordinary.
                     </Paragraph>
                 </Col>
+            </Row>
+            <Row>
+                <Button
+                    href="https://twitter.com/messages/compose?recipient_id=1814900427529592836"
+                    variant="dark"
+                    target="_blank"
+                >
+                    DM us on X , and let's craft the extraordinary.
+                </Button>
             </Row>
         </Container>
     );
