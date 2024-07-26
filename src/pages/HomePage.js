@@ -26,13 +26,24 @@ const HomePage = () => {
                 </Col>
             </Row>
             <Row>
-                <Button
-                    href="https://twitter.com/messages/compose?recipient_id=1814900427529592836"
-                    variant="dark"
-                    target="_blank"
-                >
-                    DM us on X , and let's craft the extraordinary.
-                </Button>
+                <Col sm className="text-center">
+                    <Button
+                        href="https://twitter.com/messages/compose?recipient_id=1814900427529592836"
+                        variant="outline-info"
+                        target="_blank"
+                    >
+                        DM us on X , and let's craft the extraordinary.
+                    </Button>
+                </Col>
+                <Col sm className="text-center">
+                    <Button
+                        href="https://discord.gg/qn9tRu5dax"
+                        variant="outline-info"
+                        target="_blank"
+                    >
+                        Join us on Discord and have a chat.
+                    </Button>
+                </Col>
             </Row>
         </Container>
     );

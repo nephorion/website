@@ -1,0 +1,1 @@
+gcloud storage cp --recursive build/** gs://${PROJECT_ID}
