@@ -1,13 +1,8 @@
 import React from 'react';
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
-import styled from "styled-components";
+import {Col, Container, Row} from "react-bootstrap";
 import PageHeader from "../components/PageHeader";
 import CatalogueCard from "../components/CatalogueCard";
 
-const Paragraph = styled.p`
-    color: white;
-    font-family: 'Courier', sans-serif;
-`
 
 const HomePage = () => {
     return (
