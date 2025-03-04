@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Col, Container, Row} from "react-bootstrap";
 import styled from "styled-components";
 import PageHeader from "../components/PageHeader";
+import {useNavigate} from "react-router-dom";
 
 const Paragraph = styled.p`
     color: white;
@@ -9,6 +10,12 @@ const Paragraph = styled.p`
 `
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleCatalogueClick = () => {
+        navigate('/catalogue');
+    };
+
     return (
         <Container>
             <PageHeader/>
@@ -25,25 +32,37 @@ const HomePage = () => {
                     </Paragraph>
                 </Col>
             </Row>
+
             <Row>
-                <Col sm className="text-center">
-                    <Button
-                        href="https://twitter.com/messages/compose?recipient_id=1814900427529592836"
-                        variant="outline-info"
-                        target="_blank"
-                    >
-                        DM us on X , and let's craft the extraordinary.
-                    </Button>
-                </Col>
-                <Col sm className="text-center">
-                    <Button
-                        href="https://discord.gg/qn9tRu5dax"
-                        variant="outline-info"
-                        target="_blank"
-                    >
-                        Join us on Discord and have a chat.
-                    </Button>
-                </Col>
+                <Button
+                    variant="outline-info"
+                    onClick={handleCatalogueClick}
+                >
+                    Catalogue
+                </Button>
+
+            </Row>
+
+            <br/>
+            <Row>
+                <Button
+                    href="https://twitter.com/messages/compose?recipient_id=1814900427529592836"
+                    variant="outline-info"
+                    target="_blank"
+                >
+                    DM us on X , and let's craft the extraordinary.
+                </Button>
+            </Row>
+            <br/>
+            <Row>
+
+                <Button
+                    href="https://discord.gg/qn9tRu5dax"
+                    variant="outline-info"
+                    target="_blank"
+                >
+                    Join us on Discord and have a chat.
+                </Button>
             </Row>
         </Container>
     );
