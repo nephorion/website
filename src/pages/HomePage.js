@@ -87,9 +87,11 @@ const HomePage = () => {
             </Row>
 
             <ButtonRow $delay="0.9s" className="mt-4">
-                <NeonButton onClick={handleCatalogueClick}>
-                    Catalogue
-                </NeonButton>
+                <Col sm>
+                    <NeonButton onClick={handleCatalogueClick}>
+                        Catalogue
+                    </NeonButton>
+                </Col>
             </ButtonRow>
 
         </Container>
