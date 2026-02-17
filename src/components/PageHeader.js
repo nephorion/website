@@ -34,6 +34,14 @@ const SocialIcon = styled.a`
         filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
         transform: translateY(-2px) scale(1.1);
     }
+
+    &:focus-visible {
+        color: #ffffff;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+        transform: translateY(-2px) scale(1.1);
+        outline: 2px solid #ffffff;
+        outline-offset: 2px;
+    }
 `
 
 const PageHeader = ({name}) => {
