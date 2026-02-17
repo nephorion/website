@@ -5,19 +5,12 @@ import SubHeading from "./SubHeading";
 import Heading from "./Heading";
 import Logo from "./Logo";
 
-const HeaderWrapper = styled.div`
-    position: relative;
-`
-
 const SocialBar = styled.div`
-    position: absolute;
-    top: 12px;
-    right: 0;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    animation: fadeIn 1s ease-out 0.2s both;
-    z-index: 10;
+    justify-content: center;
+    gap: 20px;
+    padding: 8px 0;
+    animation: fadeIn 1s ease-out 0.4s both;
 `
 
 const SocialIcon = styled.a`
@@ -45,7 +38,19 @@ const SocialIcon = styled.a`
 
 const PageHeader = ({name}) => {
     return (
-        <HeaderWrapper>
+        <>
+            <Row>
+                <Col sm className="text-center">
+                    <Logo/>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col sm className="text-center">
+                    <SubHeading name="Cloud Native. AI Augmented. Code Fluent. Human First."/>
+                </Col>
+            </Row>
+
             <SocialBar>
                 <SocialIcon
                     href="https://twitter.com/messages/compose?recipient_id=1814900427529592836"
@@ -71,22 +76,10 @@ const PageHeader = ({name}) => {
 
             <Row>
                 <Col sm className="text-center">
-                    <Logo/>
-                </Col>
-            </Row>
-
-            <Row>
-                <Col sm className="text-center">
-                    <SubHeading name="Cloud Native. AI Augmented. Code Fluent. Human First."/>
-                </Col>
-            </Row>
-
-            <Row>
-                <Col sm className="text-center">
                     <Heading name="nephorion"/>
                 </Col>
             </Row>
-        </HeaderWrapper>
+        </>
 )
 };
 
