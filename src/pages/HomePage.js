@@ -72,13 +72,16 @@ const HomePage = () => {
             <Row>
                 <Col sm className="text-center">
                     <Paragraph>
-                        In the neon-drenched corridors of the digital sprawl,
-                        we fuse the relentless power of cloud architecture with
-                        the ethereal whispers of AI, sculpting code that's both
-                        elegant and beautiful. Every line, every function is designed
-                        with the human experience at its core, bridging the divide
-                        between cold silicon and warm flesh. This isn't just technology — it's
-                        a revolution. Plug in, sync up, and let's create the future.
+                        Made for humans.
+                    </Paragraph>
+                    <Paragraph>
+                        Enhanced by AI.
+                    </Paragraph>
+                    <Paragraph>
+                        Engineered with passion.
+                    </Paragraph>
+                    <Paragraph>
+                        Designed to evolve.
                     </Paragraph>
                 </Col>
             </Row>

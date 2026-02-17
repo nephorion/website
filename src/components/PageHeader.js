@@ -47,7 +47,7 @@ const PageHeader = ({name}) => {
 
             <Row>
                 <Col sm className="text-center">
-                    <SubHeading name="Cloud Native. AI Augmented. Code Fluent. Human First."/>
+                    <SubHeading name="If it’s not awesome, we didn’t build it."/>
                 </Col>
             </Row>
 
