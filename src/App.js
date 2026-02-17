@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactGA from 'react-ga4';
 import HomePage from './pages/HomePage';
+import CataloguePage from "./pages/CataloguePage";
 
 const usePageTracking = () => {
     const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
             <div className="animated-background"></div>
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/catalogue" element={<CataloguePage />} />
             </Routes>
         </Container>
     );
