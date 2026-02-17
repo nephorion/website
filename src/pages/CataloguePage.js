@@ -27,7 +27,7 @@ const CataloguePage = () => {
                     <CatalogueCard
                         title="Stock Models"
                         sub_title="We develop a stock picking strategy for you"
-                        text="Lets do this. We build then model."
+                        text="Lets do this. We build the model."
                         cta="Contact us now for a trial"
                         delay="0.6s"
                     ></CatalogueCard>
