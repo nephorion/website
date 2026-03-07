@@ -18,7 +18,7 @@ const ButtonRow = styled(Row)`
     animation: fadeInUp 1s ease-out ${props => props.$delay || '0.9s'} both;
 `
 
-const NeonButton = styled.button`
+const NeonButton = styled.button.attrs({ type: 'button' })`
     display: block;
     width: 100%;
     border: 1px solid rgba(0, 255, 255, 0.4);
@@ -55,6 +55,13 @@ const NeonButton = styled.button`
 
     &:hover::before {
         left: 100%;
+    }
+
+    &:focus-visible {
+        outline: 2px solid rgba(0, 255, 255, 0.8);
+        outline-offset: 2px;
+        border-color: rgba(0, 255, 255, 0.8);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), inset 0 0 15px rgba(0, 255, 255, 0.15);
     }
 `
 
