@@ -3,8 +3,8 @@ import {Route, Routes, useLocation} from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactGA from 'react-ga4';
-import HomePage from './pages/HomePage';
-import CataloguePage from "./pages/CataloguePage";
+import HomePage from './pages/HomePage.jsx';
+import CataloguePage from "./pages/CataloguePage.jsx";
 
 const usePageTracking = () => {
     const location = useLocation();

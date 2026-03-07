@@ -1,8 +1,8 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import styled from "styled-components";
-import PageHeader from "../components/PageHeader";
-import CatalogueCard from "../components/CatalogueCard";
+import PageHeader from "../components/PageHeader.jsx";
+import CatalogueCard from "../components/CatalogueCard.jsx";
 
 const CardRow = styled(Row)`
     margin-bottom: 24px;
