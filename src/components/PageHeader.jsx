@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import styled from "styled-components";
-import SubHeading from "./SubHeading";
-import Heading from "./Heading";
-import Logo from "./Logo";
+import SubHeading from "./SubHeading.jsx";
+import Heading from "./Heading.jsx";
+import Logo from "./Logo.jsx";
 
 const SocialBar = styled.div`
     display: flex;

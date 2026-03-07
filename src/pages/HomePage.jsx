@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import styled from "styled-components";
-import PageHeader from "../components/PageHeader";
+import PageHeader from "../components/PageHeader.jsx";
 import {useNavigate} from "react-router-dom";
 
 const Paragraph = styled.p`
